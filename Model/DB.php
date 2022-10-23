@@ -13,7 +13,7 @@ class DB
 
     public static function getPDO(): PDO
     {
-        if (self::getPDO() === null) {
+        if (self::$pdoObject === null) {
             try {
                 $dsn = sprintf(self::$dsn, Config::DB_HOST, Config::DB_NAME, Config::DB_CHARSET);
                 self::$pdoObject = new PDO($dsn, Config::DB_USERNAME, Config::DB_PASSWORD);
