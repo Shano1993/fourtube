@@ -10,7 +10,7 @@ use App\Model\Entity\Video;
         <div id="videoName">
             <div id="vdo">
                 <p id="titleVideo"><?= $video->getTitle() ?></p>
-                <video src="/video/<?= $video->getVideoName() ?>"></video>
+                <video src="/video/<?= $video->getVideoName() ?>" controls></video>
             </div>
         </div> <?php
     } ?>
