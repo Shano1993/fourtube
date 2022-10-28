@@ -1,6 +1,7 @@
 <?php
 
 use App\Model\Entity\Video;
+use App\Model\Manager\UserManager;
 
 ?>
 
@@ -9,8 +10,11 @@ use App\Model\Entity\Video;
         /* @var Video $video */ ?>
         <div id="videoName">
             <div id="vdo">
-                <p id="titleVideo"><?= $video->getTitle() ?></p>
                 <video src="/video/<?= $video->getVideoName() ?>" controls></video>
+                <div id="video_block">
+                    <h2 id="titleVideo"><?= $video->getTitle() ?></h2>
+                    <p id="username"><?=  $video->getAuthor()->getUsername() ?></p>
+                </div>
             </div>
         </div> <?php
     } ?>

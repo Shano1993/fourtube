@@ -93,4 +93,16 @@ input {
     text-align: center;
 }
 
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#username {
+    font-size: 2rem;
+}
+
+#vdo {
+    padding: 3rem;
+}
 
