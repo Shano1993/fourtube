@@ -106,3 +106,13 @@ h2 {
     padding: 3rem;
 }
 
+.videos {
+    width: 40rem;
+}
+
+#viewVideo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

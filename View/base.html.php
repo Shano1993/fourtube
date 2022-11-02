@@ -60,7 +60,10 @@
             </div>
         </nav>
     </header>
-    <p><?=$html?></p>
+
+    <div>
+        <?=$html?>
+    </div>
 
     <script src="/assets/js/app.js"></script>
     <script src="https://kit.fontawesome.com/84aafb4cd1.js" crossorigin="anonymous"></script>

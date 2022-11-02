@@ -10,7 +10,7 @@ use App\Model\Manager\UserManager;
         /* @var Video $video */ ?>
         <div id="videoName">
             <div id="vdo">
-                <video src="/video/<?= $video->getVideoName() ?>" controls></video>
+                <video src="/video/<?= $video->getVideoName() ?>" class="videos"></video>
                 <div id="video_block">
                     <h2 id="titleVideo"><?= $video->getTitle() ?></h2>
                     <p id="username"><?=  $video->getAuthor()->getUsername() ?></p>
