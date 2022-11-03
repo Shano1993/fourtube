@@ -79,5 +79,12 @@ class VideoController extends AbstractController
             }
         }
         $this->render('video/add-video');
+        exit();
+    }
+
+    public function watchVideo(int $id) {
+        $this->render('video/watch-video', [
+            'show_video' => VideoManager::getVideo($id)
+        ]);
     }
 }

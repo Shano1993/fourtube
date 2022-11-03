@@ -1,4 +1,15 @@
-const video = document.querySelectorAll('video');
+const video = document.querySelectorAll('.videos');
+const success = document.querySelector('.success');
+const error = document.querySelector('.error');
+
+function getMessage(message) {
+    setTimeout(function () {
+        message.remove();
+    }, 5000)
+}
+
+getMessage(success);
+getMessage(error);
 
 for (let i = 0; i < video.length; i++) {
     video[i].addEventListener("mouseenter", function () {

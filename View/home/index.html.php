@@ -10,9 +10,9 @@ use App\Model\Manager\UserManager;
         /* @var Video $video */ ?>
         <div id="videoName">
             <div id="vdo">
-                <video src="/video/<?= $video->getVideoName() ?>" class="videos"></video>
+                <video src="/assets/video/<?= $video->getVideoName() ?>" class="videos"></video>
                 <div id="video_block">
-                    <h2 id="titleVideo"><?= $video->getTitle() ?></h2>
+                    <a href= "/index.php?c=video&a=watch-video&id=<?= $video->getId() ?>" id="titleVideo"><?= $video->getTitle() ?></a>
                     <p id="username"><?=  $video->getAuthor()->getUsername() ?></p>
                 </div>
             </div>

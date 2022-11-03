@@ -15,7 +15,10 @@ class VideoRouter extends AbstractRouter
                 $controller->index();
                break;
             case 'add-video':
-                $controller->addVideo('video/');
+                $controller->addVideo('assets/video/');
+                break;
+            case 'watch-video':
+                self::routeWithParams($controller, 'watchVideo', ['id' => 'int']);
                 break;
             default:
                 (new ErrorController())->error404($action);
