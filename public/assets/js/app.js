@@ -20,3 +20,15 @@ for (let i = 0; i < video.length; i++) {
         video[i].pause();
     })
 }
+
+let viewNumber = 0;
+
+function view() {
+    viewNumber++;
+    document.getElementById("view").innerHTML = viewNumber;
+}
+
+let videoId = document.querySelectorAll(".videoId");
+for (let i = 0; i < videoId.length; i++) {
+    window.addEventListener("load", view)
+}
