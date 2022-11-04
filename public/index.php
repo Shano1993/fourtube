@@ -1,6 +1,7 @@
 <?php
 
 use App\Routing\AbstractRouter;
+use App\Routing\CommentRouter;
 use App\Routing\HomeRouter;
 use App\Routing\UserRouter;
 use App\Routing\VideoRouter;
@@ -20,6 +21,9 @@ switch ($page) {
         break;
     case 'video':
         VideoRouter::route($method);
+        break;
+    case 'comment':
+        CommentRouter::route($method);
         break;
     default:
         (new ErrorController())->error404($page);
